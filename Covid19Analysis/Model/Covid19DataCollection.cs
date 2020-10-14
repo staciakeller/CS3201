@@ -68,7 +68,6 @@ namespace Covid19Analysis.Model
         {
             this.position = 0;
         }
-
         /// <summary>
         ///     Return a List of data from the specified state
         /// </summary>
