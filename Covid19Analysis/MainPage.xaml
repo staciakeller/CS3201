@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Covid19Analysis.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="loadFileButton" Icon="OpenFile" Label="Load File" Click="loadFile_Click">
+
+            </AppBarButton>
+        </CommandBar>
+        <TextBox x:Name="summaryTextBox" HorizontalAlignment="Left" Margin="12,67,0,0" VerticalAlignment="Top" TextWrapping="Wrap" Text="Summary" Height="276" Width="600" IsReadOnly="True" AutomationProperties.Name="summaryTextBlock" FontFamily="Courier New"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="COVID-19 Analysis"/>
+        <TextBlock x:Name="upperThresholdTextBlock" HorizontalAlignment="Left" Margin="640,67,0,0" Text="Count days with Positive Tests greater than" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="upperThresholdTextBox" HorizontalAlignment="Left" Margin="640,107,0,0" Text="2500" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="2500" TextChanged="upperThresholdTextBox_TextChanged"/>
+        <TextBlock x:Name="lowerThresholdTextBlock" HorizontalAlignment="Left" Margin="640,160,0,0" Text="Count days with Positive Tests less than" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.165,1.176"/>
+        <TextBox x:Name="lowerThresholdTextBox" HorizontalAlignment="Left" Margin="640,205,0,0" Text="1000" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="1000" TextChanged="lowerThresholdTextBox_TextChanged"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="GettingStartedUI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="outputTextBlock" HorizontalAlignment="Left" Margin="138,81,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="101" FontFamily="Arial Black" FontSize="20"/>
+        <Button x:Name="helloButton" Content="Hello" Margin="140,131,0,0" VerticalAlignment="Top" FontSize="20" Click="helloButton_Click"/>
+        <Button x:Name="goodbyeButton" Content="GoodBye" Margin="140,191,0,0" VerticalAlignment="Top" FontSize="20" Click="goodbyeButton_Click" />
+        <Button x:Name="getInfoButton" Content="Get Info" Margin="140,256,0,0" VerticalAlignment="Top" FontSize="20" Click="getInfoButton_Click"/>
+        <Button x:Name="getDataButton" Content="Get Data" Margin="148,327,0,0" VerticalAlignment="Top" FontSize="20" Click="getDataButton_Click"/>
+
+    </Grid>
+</Page>

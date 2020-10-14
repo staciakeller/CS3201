@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GettingStarted</name>
+    </assembly>
+    <members>
+        <member name="T:GettingStarted.Model.Student">
+            <summary>
+                <br />
+            </summary>
+        </member>
+        <member name="P:GettingStarted.Model.Student.FirstName">
+            <summary>Gets or sets the first name.</summary>
+            <value>The first name.</value>
+        </member>
+        <member name="M:GettingStarted.Model.Student.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+                Initializes a new instance of the <a onclick="return false;" href="Student" originaltag="see">Student</a>
+                class.
+            </summary>
+            <param name="firstName">The first name.</param>
+            <param name="lastName">The last name.</param>
+            <param name="grade">The grade.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">grade - must be between 0 and 100</exception>
+            <exception cref="T:System.ArgumentNullException">
+                firstName
+                or
+                lastName
+            </exception>
+        </member>
+        <member name="M:GettingStarted.Model.Student.ToString">
+            <summary>Converts to string.</summary>
+            <returns>
+                A <a onclick="return false;" href="System.String" originaltag="see">System.String</a> that represents this
+                instance.
+            </returns>
+        </member>
+    </members>
+</doc>

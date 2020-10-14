@@ -1,0 +1,24 @@
+﻿<ContentDialog
+    x:Class="Covid19Analysis.View.SimilarDataFoundDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Similar Data Found"
+    PrimaryButtonText="Replace"
+    SecondaryButtonText="Keep"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="235*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="similarDataTextBlock" HorizontalAlignment="Left" Margin="0,-15,0,0" Text="Data with the same date already exists in your loaded data. Would you like to replace this date or keep it?" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" TextAlignment="Center" FontWeight="Normal" Height="37" Width="476"/>
+        <TextBlock Grid.Column="0" x:Name="existingDataTextBlock" HorizontalAlignment="Left" Margin="0,22,0,0" Text="existing data: " TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="475"/>
+        <TextBlock Grid.Column="0" x:Name="newDataTextBlock" HorizontalAlignment="Left" Margin="0,41,0,0" Text="new data: " TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="475"/>
+        <CheckBox Grid.Column="0" x:Name="futureSimilaritiesCheckBox" Content="Save choice for future similarities" Margin="0,64,243,0" VerticalAlignment="Top" Height="32" HorizontalAlignment="Right" Width="232" Click="ContentDialog_FutureDecisionChecked"/>
+    </Grid>
+</ContentDialog>
