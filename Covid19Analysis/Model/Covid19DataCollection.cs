@@ -73,6 +73,7 @@ namespace Covid19Analysis.Model
         /// </summary>
         /// <param name="state"></param>
         /// <returns></returns>
+        
         public List<Covid19DailyData> GetDataFromState(StateAbbreviations state)
         {
             var aStateCollection = new List<Covid19DailyData>();
